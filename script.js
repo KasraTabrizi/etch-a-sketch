@@ -1,5 +1,5 @@
 let gridSize = 10;
-let colorMode = "color"; //or 'rainbow'
+let colorMode = "color";
 let drawContainer = document.getElementById("draw__container");
 let gridSizeSelector = document.getElementById("grid_size_selector");
 let customColorPicker = document.getElementById("custom_color_picker");

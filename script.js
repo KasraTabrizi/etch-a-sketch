@@ -2,6 +2,7 @@ let gridSize = 10;
 let colorMode = "color";
 let drawContainer = document.getElementById("draw__container");
 let gridSizeSelector = document.getElementById("grid_size_selector");
+let gridSizeIndicator = document.getElementById("grid_size_indicator");
 let customColorPicker = document.getElementById("custom_color_picker");
 let clearButton = document.getElementById("clear_button");
 let eraseButton = document.getElementById("erase_button");
@@ -41,6 +42,8 @@ function generateGrid() {
     gridCell.addEventListener("mousedown", hoverColor);
     drawContainer.appendChild(gridCell);
   }
+
+  gridSizeIndicator.innerText = `${gridSize}x${gridSize}`;
 }
 
 function clearGrid() {

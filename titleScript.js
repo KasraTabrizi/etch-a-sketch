@@ -22,7 +22,7 @@ for (let i = 0; i < title.length; i++) {
         letterSegmentDiv.style["animation-timing-function"] =
           "cubic-bezier(.23,-0.6,.77,1.5)";
         letterSegmentDiv.style.animationDuration = `${animationIter}s`;
-        animationIter += 0.015;
+        animationIter += 0.02;
       } else {
         letterSegmentDiv.style.backgroundColor = "white";
       }

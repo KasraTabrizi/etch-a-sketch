@@ -18,13 +18,21 @@
         <div id="main__container">
             <div id="settings__container">
                 <div id="grid_change__container">
-                    <input value="10" type="range" id="grid_size_selector" name="vol" min="2" max="64">
+                    <h2>Grid Size:<span id="grid_size_indicator">10x10</span></h2>
+                    <div>
+                        <span>2x2</span>
+                        <input value="10" type="range" id="grid_size_selector" name="vol" min="2" max="64">
+                        <span>64x64</span>
+                    </div>
                 </div>
                 <div id="color__container">
-                    <div id="custom_color">
-                        <input type="color" id="custom_color_picker" value="#1e1e1e">
+                    <h2>Color Mode</h2>
+                    <div>
+                        <div id="custom_color">
+                            <input type="color" id="custom_color_picker" value="#1e1e1e">
+                        </div>
+                        <div id="rainbow_color"></div>
                     </div>
-                    <div id="rainbow_color"></div>
                 </div>
                 <div id="button__container">
                     <button id="erase_button">Erase</button>

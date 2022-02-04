@@ -18,18 +18,32 @@ h1 {
 }
 
 #wrapper {
-  width: 50vw;
+  width: 60vw;
 }
 
 #main__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid green;
+  width: 50vw;
+  padding: 5px;
 }
+
 #settings__container {
-  width: 200px;
+  width: 250px;
   height: 500px;
-  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+#color__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 input[type="color"],
@@ -38,6 +52,12 @@ input[type="color"],
   width: 80px;
   border-radius: 50%;
   border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="color"]:hover,
+#rainbow_color:hover {
+  transform: scale(0.9);
 }
 
 input[type="color"]::-webkit-color-swatch-wrapper {
@@ -58,6 +78,18 @@ input[type="color"]::-webkit-color-swatch {
     rgba(5, 0, 242, 0.88) 341.25deg,
     #ff0000 403.12deg
   );
+}
+
+#button__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#erase_button,
+#clear_button {
+  width: 100px;
+  height: 30px;
 }
 
 #draw__container {

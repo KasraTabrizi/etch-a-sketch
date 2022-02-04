@@ -6,14 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="wrapper">
-        <h1>ETCH-A-SKETCH</h1>
+        <div id="header__title"></div>
         <div id="main__container">
             <div id="settings__container">
+                <div id="grid_change__container">
+                    <input value="10" type="range" id="grid_size_selector" name="vol" min="2" max="64">
+                </div>
                 <div id="color__container">
                     <div id="custom_color">
                         <input type="color" id="custom_color_picker" value="#1e1e1e">
@@ -24,9 +30,6 @@
                     <button id="erase_button">Erase</button>
                     <button id="clear_button">Clear</button>
                 </div>
-                <div id="grid_change__container">
-                    <input value="10" type="range" id="grid_size_selector" name="vol" min="2" max="64">
-                </div>
             </div>
             <div id="draw__container">
                 <!-- one grid div looks like this
@@ -34,6 +37,8 @@
             </div>
         </div>
     </div>
+    <script src="titleArray.js"></script>
+    <script src="titleScript.js"></script>
     <script src="script.js"></script>
 </body>
 

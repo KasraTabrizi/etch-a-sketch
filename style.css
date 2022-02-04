@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  font-family: "Rowdies", cursive;
+  font-family: "Roboto Mono", monospace;
 }
 
 h1 {
@@ -86,6 +86,16 @@ input[type="color"]::-webkit-color-swatch {
   width: 100px;
   height: 30px;
   cursor: pointer;
+  font-family: "Roboto Mono", monospace;
+  background-color: white;
+  transition: 0.2s all ease-in-out;
+}
+
+#erase_button:hover,
+#clear_button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
 }
 
 #draw__container {
